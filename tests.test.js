@@ -1,6 +1,7 @@
 import capitalize from './capitalize';
 import reverseString from './reverseString';
 import calculator from './calculator';
+import caesarCipher from './caesarCipher';
 
 test('Capitalizing', () => {
 	expect(capitalize('Cat')).toBe('CAT');
