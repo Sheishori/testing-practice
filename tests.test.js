@@ -2,6 +2,7 @@ import capitalize from './capitalize';
 import reverseString from './reverseString';
 import calculator from './calculator';
 import caesarCipher from './caesarCipher';
+import analyzeArray from './analyzeArray';
 
 test('Capitalizing', () => {
 	expect(capitalize('Cat')).toBe('CAT');
@@ -46,7 +47,7 @@ test('Caesar Cipher punctuation', () => {
 });
 
 test('Analyze array', () => {
-	expect(analyzeArray([1, 8, 3, 4, 2, 6])).toBe({
+	expect(analyzeArray([1, 8, 3, 4, 2, 6])).toStrictEqual({
 		average: 4,
 		min: 1,
 		max: 8,
