@@ -29,3 +29,17 @@ test('Divide', () => {
 test('Multiply', () => {
 	expect(calculator.multiply(3, 3)).toBe(9);
 });
+
+test('Caesar Cipher', () => {
+	expect(caesarCipher('defend the east wall of the castle')).toBe(
+		'efgfoe uif fbtu xbmm pg uif dbtumf'
+	);
+});
+
+test('Caesar Cipher wrapping', () => {
+	expect(caesarCipher('z')).toBe('a');
+});
+
+test('Caesar Cipher punctuation', () => {
+	expect(caesarCipher('abc, de.')).toBe('bcd, ef.');
+});
