@@ -1,4 +1,5 @@
 import capitalize from './capitalize';
+import reverseString from './reverseString';
 
 test('Capitalizing', () => {
 	expect(capitalize('Cat')).toBe('CAT');
