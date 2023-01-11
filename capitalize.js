@@ -1,5 +1,5 @@
 function capitalize(text) {
-	return text.toUpperCase();
+	return String(text).toUpperCase();
 }
 
 export default capitalize;
